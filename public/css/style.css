@@ -1,0 +1,42 @@
+body {
+	background-color: #F0EBD8;
+	padding-bottom: 6rem;
+}
+
+.container-fluid{
+	 padding-left: 0rem;
+	 padding-right: 0rem;
+}
+
+.navbar{
+	background-color: #1D2D44;
+}
+
+.content{
+	width: 100%;
+}
+
+.myName{
+	color: #F0EDB8;
+}
+
+.resize {
+	height: 100%;
+	width: 100%;
+}
+
+.about{
+	background-color: green;
+}
+
+.footer{ 
+	background-color: #0D1321;
+	height: 70px;
+	width: 100%;
+	opacity: .9;
+}
+
+.footerText{
+	color: #748CAB;
+	text-align: center;
+}
