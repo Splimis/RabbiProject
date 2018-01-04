@@ -11,7 +11,7 @@ module.exports = function(app) {
 		res.sendFile(path.join(__dirname, '../views/contact.html'));
 	});
 
-	app.get('/portfolio', function(req, res) {
-		res.sendFile(path.join(__dirname, '../views/portfolio.html'));
+	app.get('/lectures', function(req, res) {
+		res.sendFile(path.join(__dirname, '../views/lectures.html'));
 	});
 };
