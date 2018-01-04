@@ -1,23 +1,34 @@
 body {
 	background-color: #F0EBD8;
-	padding-bottom: 6rem;
-}
+	/*background-image: url(../assets/images/hd1080.png);*/
 
-.container-fluid{
-	 padding-left: 0rem;
-	 padding-right: 0rem;
 }
 
 .navbar{
 	background-color: #1D2D44;
-}
-
-.content{
 	width: 100%;
 }
 
+.something {
+	display: inline;
+	float: left;
+}
+
+.container-fluid {
+	padding: 0 0;
+	}
+
+.content{
+	width: 100%;
+	margin-bottom: 50px;
+}
+
 .myName{
-	color: #F0EDB8;
+	color: #F0EBD8;
+}
+
+.photo {
+	padding: 0 0;
 }
 
 .resize {
@@ -26,7 +37,7 @@ body {
 }
 
 .about{
-	background-color: green;
+	background-color: #3E5C76;
 }
 
 .footer{ 
@@ -39,4 +50,5 @@ body {
 .footerText{
 	color: #748CAB;
 	text-align: center;
+	margin-top: 20px;
 }
