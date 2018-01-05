@@ -18,8 +18,20 @@
   },
   "homepage": "https://github.com/Splimis/RabbiProject#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
     "express": "^4.16.2",
-    "path": "^0.12.7"
+    "express-handlebars": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.3.0",
+    "method-override": "^2.3.10",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.13.4",
+    "mysql": "^2.15.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "popper": "^1.0.0"
   }
 }
