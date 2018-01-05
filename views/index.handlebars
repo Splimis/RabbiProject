@@ -1,13 +1,74 @@
 <main role="main" class='container-fluid'>
+	<div class="wrapper">
 	
 <div class="row">
   <div class="col-md-6  photo">
     <img src="../public/assets/images/brookdale.jpg" class="resize">
   </div> <!-- photo div -->
+
+
+
   <div class="col-md-4 about">
     <h2> About the Lecturers </h2>
     <p class="blurb">Rabbi Susman and Dr. Bellitto have lectured as a pair for over a decade, offering talks on what is shared and distinct in Christmas and Chanukah, Passover and Easter, scripture and traditions. Their goal is to bridge the polarized gap between Judaism and Christianity by using an open-eyed view of history to promote understanding and good faith moving forward.</p>
-  </div> <!-- about div --> 
-</div> <!-- row -->  
+{{!-- <span class="open-slide">
+  	<a href="#" onclick="openSlideMenu()">
+  		<svg width="30" height="30">
+  			<path d="M0,5 30,5" stroke="#fff"
+  				stroke-width="5"/>
+  			<path d="M0,14 30,14" stroke="#fff"
+  				stroke-width="5"/>
+			<path d="M0,23 30,23" stroke="#fff"
+  				stroke-width="5"/>
+  		</svg>
+  	</a>		
+</span> --}}
+	<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+		<i class="glyphicon glyphicon-align-left"></i>
+		Toogle Sidebar
+	</button>
 
+  </div> <!-- about div -->
+
+
+
+
+  <nav id="sidebar">
+  	<div class="side-bar-header">
+  		<h3>Site Navigation</h3>
+  	</div>
+
+  	<ul class="list-unstyled components">
+  		<li><a href="#" class="btn-close" onClick="closeSlideMenu()">&times;<a/></li>
+  		<li><a href="/" class="active nav-button">Home</a></li>
+		<li><a href="/lectures" class="nav-button">Upcoming Talks</a></li>
+		<li><a href="/contact" class="nav-button">Contact</a></li>
+	</ul>
+  </nav>
+
+
+
+
+</div> <!-- row -->  
+	</div> <!-- wrapper -->
 </main> <!-- Container fluid -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+
+
+
+<script>
+
+
+
+$(document).ready(function() {
+  
+    $('#sidebarCollapse').on('click', function() {
+      $('#sidebar').toggleClass('active');
+    });
+});
+
+	
+</script>

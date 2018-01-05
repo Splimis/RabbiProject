@@ -9,7 +9,12 @@ body {
 	width: 100%;
 }
 
-.rowontent {
+.wrapper {
+	display: flex;
+	align-items: stretch;
+}
+
+.rowcontent {
 	margin: 0 0;
 }
 
@@ -45,6 +50,18 @@ body {
 	color: #748CAB;
 }
 
+#sidebar {
+	background-color: green;
+	min-width: 200px;
+	max-width: 200px;
+	min-height: 70vh;
+}
+
+
+#sidebar.active {
+	margin-left: -250px;
+}
+
 .footer{ 
 	background-color: #0D1321;
 	height: 70px;
@@ -56,5 +73,14 @@ body {
 	color: #748CAB;
 	text-align: center;
 	margin-top: 20px;
-	font-size: .5em;
+	font-size: .7em;
+}
+
+@media (max-width: 768px) {
+	#sidebar {
+		margin-right: -250px;
+	}
+	#sidebar.active {
+		margin-left: 0;
+	}
 }
