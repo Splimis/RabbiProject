@@ -51,7 +51,8 @@ body {
 }
 
 #sidebar {
-	background-color: green;
+	background-color: #1D2D44;
+	color: #F0EBD8;
 	min-width: 200px;
 	max-width: 200px;
 	min-height: 70vh;

@@ -23,10 +23,10 @@
   		</svg>
   	</a>		
 </span> --}}
-	<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+	{{!-- <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
 		<i class="glyphicon glyphicon-align-left"></i>
-		Toogle Sidebar
-	</button>
+		Toggle Navigation
+	</button> --}}
 
   </div> <!-- about div -->
 
@@ -35,12 +35,11 @@
 
   <nav id="sidebar">
   	<div class="side-bar-header">
-  		<h3>Site Navigation</h3>
+  		<h3>Addtional Information</h3>
   	</div>
 
   	<ul class="list-unstyled components">
-  		<li><a href="#" class="btn-close" onClick="closeSlideMenu()">&times;<a/></li>
-  		<li><a href="/" class="active nav-button">Home</a></li>
+  	<li><a href="/" class="active nav-button">Home</a></li>
 		<li><a href="/lectures" class="nav-button">Upcoming Talks</a></li>
 		<li><a href="/contact" class="nav-button">Contact</a></li>
 	</ul>
@@ -54,14 +53,7 @@
 </main> <!-- Container fluid -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-
-
-
-
 <script>
-
-
 
 $(document).ready(function() {
   
@@ -69,6 +61,4 @@ $(document).ready(function() {
       $('#sidebar').toggleClass('active');
     });
 });
-
-	
 </script>
