@@ -9,9 +9,8 @@ body {
 	width: 100%;
 }
 
-.something {
-	display: inline;
-	float: left;
+.rowontent {
+	margin: 0 0;
 }
 
 .container-fluid {
@@ -25,6 +24,7 @@ body {
 
 .myName{
 	color: #F0EBD8;
+	font-family: "Times New Roman", Georgia, serif;
 }
 
 .photo {
@@ -38,6 +38,11 @@ body {
 
 .about{
 	background-color: #3E5C76;
+
+}
+
+.blurb {
+	color: #748CAB;
 }
 
 .footer{ 
@@ -51,4 +56,5 @@ body {
 	color: #748CAB;
 	text-align: center;
 	margin-top: 20px;
+	font-size: .5em;
 }

@@ -7,10 +7,13 @@ router.get('/', function(req, res) {
     // console.log(res);
   });
 
-module.exports = router;
-
 router.get('/contact', function(req, res) {
     res.render('contact');
+    // console.log(res);
+  });
+
+router.get('/lectures', function(req, res) {
+    res.render('lectures');
     // console.log(res);
   });
 

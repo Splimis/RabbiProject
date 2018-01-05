@@ -1,6 +1,6 @@
 var orm = require('../config/orm.js');
 
-var quote = {
+var item = {
   selectAll: function(cb) {
     orm.selectAll('quote', function(res) {
       cb(res);
