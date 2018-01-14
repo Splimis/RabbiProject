@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-// var quotations = require('../models/test.js');
+var lectures = require('../models/test.js');
 
 router.get('/', function(req, res) {
     res.render('index');
@@ -13,8 +13,16 @@ router.get('/contact', function(req, res) {
   });
 
 router.get('/lectures', function(req, res) {
-    res.render('lectures');
-    // console.log(res);
+	lectures.selectAll(function(data) {
+		var hbsObject = {
+			lecture: data
+		};
+		// console.log(hbsObject);
+
+    res.render('lectures', hbsObject);
+     
+     // console.log(res);
   });
+});
 
 module.exports = router;

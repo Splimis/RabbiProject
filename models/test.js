@@ -1,14 +1,14 @@
 var orm = require('../config/orm.js');
 
-var item = {
+var lecture = {
   selectAll: function(cb) {
-    orm.selectAll('quote', function(res) {
+    orm.selectAll('lecture', function(res) {
       cb(res);
     });
   },
 
   selectRand: function(cb) {
-    orm.selectRand('quote', function(res) {
+    orm.selectRand('lecture', function(res) {
       cb(res);
     });
   },
@@ -38,7 +38,7 @@ var item = {
   // },
 
   insertOne: function(cols, vals, cb) {
-    orm.insertOne('quote', cols, vals, function(res) {
+    orm.insertOne('lecture', cols, vals, function(res) {
       cb(res);
     });
   },
@@ -50,4 +50,4 @@ var item = {
   // }
 };
 
-module.exports = quote;
+module.exports = lecture;

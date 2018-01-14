@@ -1,0 +1,25 @@
+CREATE DATABASE lectures;
+
+DROP TABLE IF EXISTS lecture; 
+
+USE lectures;
+
+CREATE TABLE `lecture` (
+ id INT NOT NULL AUTO_INCREMENT,
+ talks LONGBLOB NOT NULL,
+ LectID VARCHAR(25) NOT NULL,
+ -- url VARCHAR(255) NOT NULL,
+
+ PRIMARY KEY (id)
+
+);
+
+SELECT * FROM lecture;
+
+SELECT * FROM lecture WHERE CharID = Chris;
+
+SELECT * FROM lecture
+ORDER BY RAND()
+LIMIT 1;
+
+DELETE FROM lecture;
