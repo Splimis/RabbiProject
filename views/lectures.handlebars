@@ -1,15 +1,17 @@
 <div class="wrapper">
 
-	{{#each lecture}}
+		<div class="col-md-6">
+
+		{{#each lecture}}
 
 		
-		<p>{{this.talks}}</p>
+			<p>{{this.talks}}</p>
 		
-		<p>{{this.LectID}}</p>
+			<p>{{this.LectID}}</p>
 
-	{{/each}}
+		{{/each}}
 
-</div>
+		</div> <!-- lecture queries col -->
 
 <nav id="sidebar">
   	<div class="side-bar-header">
@@ -24,6 +26,8 @@
 		{{!-- <li><a href="/contact" class="nav-button">Contact</a></li> --}}
 	</ul>
   </nav>
+
+</div> <!-- wrapper -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script>
