@@ -12,6 +12,17 @@ router.get('/contact', function(req, res) {
     // console.log(res);
   });
 
+router.get('/brooks', function(req, res) {
+    res.render('brooks');
+    // console.log(res);
+  });
+
+router.get('/christopher', function(req, res) {
+    res.render('christopher');
+    // console.log(res);
+  });
+
+
 router.get('/lectures', function(req, res) {
 	lectures.selectAll(function(data) {
 		var hbsObject = {

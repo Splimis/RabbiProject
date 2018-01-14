@@ -1,0 +1,77 @@
+<main role="main" class='container-fluid'>
+	<div class="wrapper">
+	
+<div class="row">
+  <div class="col-md-6  photo">
+    IMAGE OF BROOKS HERE
+    <img src="../public/assets/images/" class="resize">
+
+  </div> <!-- photo div -->
+
+
+
+  <div class="col-md-4 about">
+    <h2> About Brooks </h2>
+    <p class="blurb">Rabbi Brooks R. Susman is the founding rabbi of Congregation Kol Am of Freehold, New Jersey. Incorporated in 2001, Kol Am was created as a liberal Jewish congregation to serve the needs of Monmouth and Ocean Counties. As of August 1, 2015, Rabbi Susman retired from the “pulpit”. In his rabbinate, Rabbi Susman, has served congregations in New York, Pennsylvania, New Jersey as well as St. Louis, Missouri. Rabbi Susman was ordained from the Hebrew Union College-Jewish Institute of Religion in 1974, where he also received his Doctor of Divinity in 1999. 
+    </p>
+    <p class="blurb">
+    Having written his Master’s Thesis on the Jewish views of Contraception and Abortion, Rabbi Susman has served on the Boards of Planned Parenthood in all the communities he has served. He has been honored by having the boardroom named in his honor by Southern Adirondack Planned Parenthood. While on Long Island, the Nassau County League of Women Voters honored him with its first “Good Guy” award. While at Temple Israel on Long Island, he served as curator of the May Museum of Judaica, and became a founding member of the Jewish Heritage Museum of Monmouth County. Locally, Rabbi Susman is presently a member of the Human Rights Commission for the Township of Freehold. In 2004, a State Senate Resolution recognized Rabbi Susman’s contributions to New Jersey and in 2014 the Township of Freehold declared June 1 as “Rabbi Brooks Susman Day”.
+    </p>
+    <p class="blurb"> 
+    Dr. Susman is presently an adjunct professor at Brookdale Community College teaching classes on ethics, justice, history as well as Bible. In conjunction with the college, he leads tours to places of interest both in the North-East as well as Europe and Israel. He also lectures in the community with Dr. Christopher Bellito in an interfaith dialogue on the three Abrahamic religions: historically, theologically and contemporaneously. Together they have been named as “The God Squad” noting their scholarly attitudes toward the critical questions of the 21st Century.
+    During his rabbinate at Congregation Kol Am, he authored the prayerbook used by the congregation, T’filat Kol Am. He is also one of the committee of authors of Gates of Mitzvah and Gates of the Seasons. 
+    Rabbi Susman and his wife Andrea are Freehold residents as well as parents and grandparents.
+    </p>
+{{!-- <span class="open-slide">
+  	<a href="#" onclick="openSlideMenu()">
+  		<svg width="30" height="30">
+  			<path d="M0,5 30,5" stroke="#fff"
+  				stroke-width="5"/>
+  			<path d="M0,14 30,14" stroke="#fff"
+  				stroke-width="5"/>
+			<path d="M0,23 30,23" stroke="#fff"
+  				stroke-width="5"/>
+  		</svg>
+  	</a>		
+</span> --}}
+	{{!-- <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+		<i class="glyphicon glyphicon-align-left"></i>
+		Toggle Navigation
+	</button> --}}
+
+  </div> <!-- about div -->
+
+
+
+
+  <nav id="sidebar">
+  	<div class="side-bar-header">
+  		<h3>Addtional Information</h3>
+  	</div>
+
+  	<ul class="list-unstyled components">
+  	<li><a href="/" class="active nav-button">Home</a></li>
+    <li><a href="/christopher" class="nav-button">About Christopher</a></li>
+    <li><a href="/brooks" class="nav-button">About Brooks</a></li>
+		<li><a href="/lectures" class="nav-button">Upcoming Talks</a></li>
+		{{!-- <li><a href="/contact" class="nav-button">Contact</a></li> --}}
+	</ul>
+  </nav>
+
+
+
+
+</div> <!-- row -->  
+	</div> <!-- wrapper -->
+</main> <!-- Container fluid -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>
+
+$(document).ready(function() {
+  
+    $('#sidebarCollapse').on('click', function() {
+      $('#sidebar').toggleClass('active');
+    });
+});
+</script>
