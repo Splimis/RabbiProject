@@ -13,21 +13,21 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
-// var databaseURI = 'mongodb://localhost/loginapp';
+var databaseURI = 'mongodb://localhost/loginapp';
 
-// if (process.env.MONGODB_URI) {
-// 	mongoose.connect(process.env.MONGODB_URI);
-// 	} else {
-// 	mongoose.connect(databaseURI);
-// }
+if (process.env.MONGODB_URI) {
+	mongoose.connect(process.env.MONGODB_URI);
+	} else {
+	mongoose.connect(databaseURI);
+}
 
-// var db = mongoose.connection;
+var db = mongoose.connection;
 
 var app = express();
 var port = process.env.PORT || 3000;
 
 
-// BodParser Middleware
+// BodyParser Middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
@@ -90,17 +90,17 @@ app.set('view engine', 'handlebars');
 
 var routes = require('./controllers/route_controller.js');
 
-// var authRoutes = require('./authRoutes/ensure');
-// var users = require('./authRoutes/users');
+var authRoutes = require('./authRoutes/ensure');
+var users = require('./authRoutes/users');
 
 
 //MySQL Routes
 app.use('/', routes);
 
 //Mongo Routes
-// app.use('/login', authRoutes);
-// app.use('/ensure', authRoutes);
-// app.use('/users', users);
+app.use('/login', authRoutes);
+app.use('/ensure', authRoutes);
+app.use('/users', users);
 
 
 app.listen(port, function() {

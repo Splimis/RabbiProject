@@ -25,26 +25,11 @@ var lecture = {
     });
   },
 
-
-  // selectRand: function(cb) {
-  //   orm.selectRand('brooks', function(res) {
-  //     cb(res);
-  //   });
-  // },
-
-  // selectRick: function(cb) {
-  //   orm.selectRick('quote', function(res) {
-  //     cb(res);
-  //   });
-  // },
-
- 
-
-  // insertOne: function(cols, vals, cb) {
-  //   orm.insertOne('brooks', cols, vals, function(res) {
-  //     cb(res);
-  //   });
-  // },
+  insertOne: function(cols, vals, cb) {
+    orm.insertOne('talks', cols, vals, function(res) {
+      cb(res);
+    });
+  },
 
   // updateOne: function(objColVals, condition, cb) {
   //   orm.updateOne('quote', objColVals, condition, function(res) {

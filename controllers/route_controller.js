@@ -22,24 +22,30 @@ router.get('/christopher', function(req, res) {
     // console.log(res);
   });
 
-router.get('/admin', function(req, res) {
-    res.render('admin');
-    // console.log(res);
-  });
-
 router.get('/lectures', function(req, res) {
-
 	lectures.selectTalks(function(data) {
-
 		var hbsObject = {
 			talks: data,
 		};
-
 		// console.log(hbsObject);
-    
-    res.render('lectures', hbsObject);
-     
+    res.render('lectures', hbsObject); 
      // console.log(res);
+  });
+});
+
+router.post('/', function(req, res) {
+  quotations.insertOne([
+    'subject',
+    'LectID',
+    'date',
+    'location'
+  ], [
+    req.body.subject,
+    req.body.LectID,
+    req.body.date,
+    req.body.location
+  ], function(data) {
+    res.redirect('/ensure/admin');
   });
 });
 
