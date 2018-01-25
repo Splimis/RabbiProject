@@ -33,8 +33,6 @@ var orm = {
 		});
 	},
 
-
-	
 	selectRand: function(tableInput, cb) {
 		var queryString = "SELECT * FROM " + tableInput + " ORDER BY RAND() LIMIT 1;";
 
@@ -46,8 +44,8 @@ var orm = {
 		});
 	},
 
-	selectRick: function(tableInput, cb) {
-		var queryString = "SELECT * FROM " + tableInput + " WHERE CharID = 'Rick' ORDER BY RAND() LIMIT 1;";
+	selectBrooks: function(tableInput, cb) {
+		var queryString = "SELECT * FROM " + tableInput + " WHERE LectID = 'Brooks';";
 
 		connection.query(queryString, function(err, result) {
 			if (err) {
@@ -56,6 +54,38 @@ var orm = {
 			cb(result);
 		});
 	},
+
+	selectChris: function(tableInput, cb) {
+		var queryString = "SELECT * FROM " + tableInput + " WHERE LectID = 'Chris';";
+
+		connection.query(queryString, function(err, result) {
+			if (err) {
+				throw err;
+			}
+			cb(result);
+		});
+	},
+
+	selectTalks: function(tableInput, cb) {
+		var queryString = "SELECT * FROM " + tableInput + " WHERE LectID = 'Christopher' OR LectID = 'Brooks';";
+
+		connection.query(queryString, function(err, result) {
+			if (err) {
+				throw err;
+			}
+			cb(result);
+		});
+	},
+
+
+
+
+
+
+
+
+
+
 
 	insertOne: function(table, cols, vals, cb) {
 		var queryString = "INSERT INTO " + table;

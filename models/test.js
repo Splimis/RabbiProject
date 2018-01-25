@@ -2,16 +2,35 @@ var orm = require('../config/orm.js');
 
 var lecture = {
   selectAll: function(cb) {
-    orm.selectAll('lecture', function(res) {
+    orm.selectAll('brooks', function(res) {
       cb(res);
     });
   },
 
-  selectRand: function(cb) {
-    orm.selectRand('lecture', function(res) {
+  selectBrooks: function(cb) {
+    orm.selectBrooks('brooks', function(res) {
       cb(res);
     });
   },
+
+  selectChris: function(cb) {
+    orm.selectChris('chris', function(res) {
+      cb(res);
+    });
+  },
+
+  selectTalks: function(cb) {
+    orm.selectTalks('talks', function(res) {
+      cb(res);
+    });
+  },
+
+
+  // selectRand: function(cb) {
+  //   orm.selectRand('brooks', function(res) {
+  //     cb(res);
+  //   });
+  // },
 
   // selectRick: function(cb) {
   //   orm.selectRick('quote', function(res) {
@@ -19,29 +38,13 @@ var lecture = {
   //   });
   // },
 
-  // selectMort: function(cb) {
-  //   orm.selectMort('quote', function(res) {
+ 
+
+  // insertOne: function(cols, vals, cb) {
+  //   orm.insertOne('brooks', cols, vals, function(res) {
   //     cb(res);
   //   });
   // },
-
-  // selectJerr: function(cb) {
-  //   orm.selectJerr('quote', function(res) {
-  //     cb(res);
-  //   });
-  // },
-
-  // selectBeth: function(cb) {
-  //   orm.selectBeth('quote', function(res) {
-  //     cb(res);
-  //   });
-  // },
-
-  insertOne: function(cols, vals, cb) {
-    orm.insertOne('lecture', cols, vals, function(res) {
-      cb(res);
-    });
-  },
 
   // updateOne: function(objColVals, condition, cb) {
   //   orm.updateOne('quote', objColVals, condition, function(res) {

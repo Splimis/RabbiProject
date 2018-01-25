@@ -1,17 +1,45 @@
 <div class="wrapper">
 
-		<div class="col-md-6">
+		<div class="col-md-2 subject">
 
-		{{#each lecture}}
+			<h3>Subject</h3>
 
-		
+			{{#each talks}}
 			<p>{{this.talks}}</p>
-		
+			{{/each}}
+
+		</div> <!--Subject -->
+
+		<div class="col-md-2 speaker">
+
+			<h3>Speaker</h3>
+
+			{{#each talks}}
 			<p>{{this.LectID}}</p>
+			{{/each}}
 
-		{{/each}}
+		</div> <!--Subject -->
 
-		</div> <!-- lecture queries col -->
+		<div class="col-md-2 date">
+
+			<h3>Date</h3>
+
+			{{#each talks}}
+			<p></p>
+			{{/each}}
+
+		</div> <!--Subject -->
+
+		<div class="col-md-2 location">
+
+			<h3>Location</h3>
+
+			{{#each talks}}
+			<p></p>
+			{{/each}}
+
+		</div> <!--Subject -->
+
 
 <nav id="sidebar">
   	<div class="side-bar-header">

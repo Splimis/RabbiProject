@@ -22,14 +22,21 @@ router.get('/christopher', function(req, res) {
     // console.log(res);
   });
 
+router.get('/admin', function(req, res) {
+    res.render('admin');
+    // console.log(res);
+  });
 
 router.get('/lectures', function(req, res) {
-	lectures.selectAll(function(data) {
-		var hbsObject = {
-			lecture: data
-		};
-		// console.log(hbsObject);
 
+	lectures.selectTalks(function(data) {
+
+		var hbsObject = {
+			talks: data,
+		};
+
+		// console.log(hbsObject);
+    
     res.render('lectures', hbsObject);
      
      // console.log(res);
